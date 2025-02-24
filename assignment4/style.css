@@ -1,0 +1,22 @@
+body {
+  background-color: #f7fdfc;
+  height: 100vh;
+}
+
+main {
+    display: flex;
+    padding: 8rem; 
+    height: 100%;
+}
+
+.logo-section {
+    display: flex;
+    padding: 8rem 0;
+    height: 100%;
+    width: 500px;
+}
+
+.btn button {
+  background-color: #2ec4b6;
+  color: white;
+}

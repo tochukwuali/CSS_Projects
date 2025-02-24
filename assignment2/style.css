@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    width: 100vw;
+}
+
+.inner-parent {
+    width: 100%;
+}
+
+.white-background {
+    background-color: white;
+    padding: 1rem 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.white-background > div {
+    width: 750px;
+    padding: 0 1.2rem;
+}
+
+.w-essay-body {
+   line-height: 30px;
+   width: 400px;
+   font-size: 20px;
+}
+
+.dark-background {
+    background-color: rgb(96, 96, 99);
+    padding: 6rem;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.dark-background>div {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 2rem;
+    position: relative;
+    border-bottom: 4px solid #999999;
+    height: 290px;
+    width: 750px;
+}
+
+.d-essay-header {
+    background-color: #FFBF00;
+    border-bottom: 4px solid #CC9900;
+    padding: 2px 18px;
+    width: fit-content;
+    position: absolute;
+    top: 4px;
+    left: -6px;
+    height: 60px;
+
+}
+
+.d-inner-div {
+   
+}
+
+.d-essay-body {
+    top: 51px;
+    position: relative;
+    /* padding-bottom: 1.6rem; */
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.green-emphasis {
+    color: #009966;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    .white-background > div {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .white-background {
+        width: 100%;
+        padding: 0 0rem;
+        height: 382px;
+    }
+
+    .w-essay-body {
+        line-height: 30px;
+        /* width: 400px; */
+        font-size: 20px;
+     }
+
+    .dark-background {
+       padding: 1rem 0;
+       height: auto;
+       height: 382px;
+    }
+    
+    .dark-background>div {
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+        position: relative;
+        border-bottom: 4px solid #999999;
+        height: auto;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    .white-background > div {
+        width: 100%;
+        padding: 0 1.2rem;
+    }
+
+    .w-essay-body {
+        line-height: 30px;
+        /* width: 400px; */
+        font-size: 20px;
+     }
+
+    .dark-background {
+       padding: 1rem 0;
+       height: auto;
+    }
+    
+    .dark-background>div {
+        background-color: #fff;
+        color: #000;
+        padding: 10px 1rem;
+        position: relative;
+        border-bottom: 4px solid #999999;
+        height: auto;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    
+}
