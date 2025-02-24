@@ -4,19 +4,63 @@ body {
 }
 
 main {
-    display: flex;
-    padding: 8rem; 
-    height: 100%;
+  display: flex;
+  padding: 8rem;
+  height: 100%;
 }
 
 .logo-section {
+  display: flex;
+  padding: 8rem 0;
+  height: 100%;
+  width: 50%;
+}
+
+.form-section {
+  width: 550px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  
+}
+
+.form-row-2 {
     display: flex;
-    padding: 8rem 0;
-    height: 100%;
-    width: 500px;
+    margin-top: 1rem;
+    gap: 20px;
+}
+
+.form-row-1 {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form-row-2 div:first-child{
+  width: 200px;
+}
+
+.form-row-2 div:nth-child(2){
+  width: 200px;
+  margin-left: 16px;
 }
 
 .btn button {
   background-color: #2ec4b6;
   color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+input, select {
+    display: block;
+    border: 1px solid #F0F0F0;
+    padding: 12px 20px;
+    border-radius: 5px;
+ 
+}
+
+input {
+width: 200px;
+margin-left: 12px;
 }
