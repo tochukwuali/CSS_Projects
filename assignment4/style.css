@@ -29,6 +29,7 @@ main {
 
 .form-section {
   width: 550px;
+  height: 600px;
   background-color: #fff;
   padding: 2rem;
   border-radius: 5px;
@@ -36,23 +37,21 @@ main {
 
 .form-row-2 {
   display: flex;
-  margin-top: 1rem;
   gap: 40px;
+}
+
+.form-row-2:not(:nth-child(1)) {
+  margin-top: 1.5rem;
 }
 
 .form-row-1 {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   width: 100%;
 }
 
-.form-row-2 div:first-child {
-  width: 200px;
-}
-
-.form-row-2 div:nth-child(2) {
-  width: 200px;
-  /* margin-left: 16px; */
+.form-row-2 div {
+  width: 100%;
 }
 
 .btn button {
@@ -62,7 +61,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 input,
@@ -74,14 +73,67 @@ select {
   margin-top: 5px;
 }
 
+input::placeholder {
+  color: #737373;
+}
+
 .form-row-1 div {
   width: 100%;
 }
 
-.form-row-1 div input, .form-row-1 div select {
+.form-row-1 div input,
+.form-row-1 div select {
   width: 100%;
 }
 
-.form-row-2 div input, .form-row-2 div select {
+.form-row-2 div input,
+.form-row-2 div select {
   width: 220px;
+}
+
+.privacy {
+  margin-top: 12px;
+}
+
+.privacy span {
+  color: #2ec4b6;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .logo-section {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .logo-section > div p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .form-row-2 {
+    flex-direction: column;
+  }
+
+  .form-row-2 div {
+    width: 100%;
+  }
+
+  .form-row-2 div input,
+  .form-row-2 div select {
+    width: 100%;
+  }
+
+  .logo-section > div img {
+    width: 18%;
+  }
 }
